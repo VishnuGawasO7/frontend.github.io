@@ -1,0 +1,136 @@
+:root {
+	--text: #f9f8fb;
+	--background:rgb(0, 0, 15);
+	--primary: #8e7ab5;
+	--secondary:  #010013;
+	--accent: #e493b3;
+
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+	color: var(--text);
+
+}
+
+body {
+	height: 200vh;
+	background: var(--background);
+}
+
+.navbar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	height: 4rem;
+	background: transparent ;
+	position: fixed;
+	top: 0;
+	padding: 0 10px;
+	z-index: 2;
+	transition: background-color;
+	/* animation: back-color ease-in-out; */
+	/* animation-timeline: scroll(); */
+
+
+}
+@keyframes back-color {
+	0%,60%{
+		opacity: 0;
+	}
+	100%{
+		background-color: var(--secondary);
+		opacity: 1;
+	}
+}
+.name {
+	font-size: 1.5rem;
+}
+
+.routes {
+	list-style-type: none;
+	display: flex;
+	justify-content: space-evenly;
+	width: 60%;
+}
+
+.routes li {
+	margin-right: 10px;
+}
+
+.routes > li > a {
+	text-decoration: none;
+	color: var(--text);
+}
+.routes > li:hover{
+	transform:scale(1.2);
+}
+
+.routes > li > a > i{
+	width:25px
+}
+
+.main {
+	background-image: url('Untitled design (1).png');
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	background-origin: center;
+	mask-image:url(ink_lv2.gif);
+	mask-size:cover;
+	mask-position: center;
+	animation: fade-out 1s;
+	animation-timeline:scroll();
+	
+}
+@keyframes fade-out{
+	to{
+		opacity: 0;
+	}
+}
+
+.hero {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	animation: fade-out ease-in;
+	animation-timeline:scroll(y);
+}
+
+.hero h1 {
+	font-size: 3rem;
+	animation:out-mate linear scroll(y); 
+}
+
+.hero p {
+	font-size: 1.5rem;
+}
+@keyframes out-mate{
+	to{
+		transform: translate(-1000px, 0);
+}
+}
+
+
+@media (max-width: 768px) {
+	.routes {
+			display: none;
+	}
+
+	.hamburger::after,.hamburger::before,.hamburger {
+		content:'';
+			display: block;
+			width: 25px;
+			height: 3x;
+			margin: 5px;
+			background: var(--text);
+	}
+}
