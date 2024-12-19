@@ -74,6 +74,43 @@ body {
 	width:25px
 }
 
+#hamburger,.hamburger-menu,.hamburger{
+	display: none;
+}
+.icon-x{
+	display: none;
+}
+#hamburger:checked ~ .hamburger-menu{
+	display:flex;
+}
+#hamburger:checked + .hamburger .icon-bars {
+  display: none; 
+} 
+#hamburger:checked + .hamburger .icon-x {
+  display: inline; 
+}
+
+.hamburger-container{
+
+}
+.hamburger-menu{
+	position: absolute;
+	background: #000;
+	width: 100%;
+	height: 100vh;
+	top: 60px;
+	right: 0px;
+	left: 0;
+	bottom: 0;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	font-size: 5rem;
+
+	
+}
+
+
 .main {
 	background-image: url('Untitled design (1).png');
 	width: 100%;
@@ -119,18 +156,30 @@ body {
 }
 }
 
-
 @media (max-width: 768px) {
 	.routes {
 			display: none;
 	}
-
-	.hamburger::after,.hamburger::before,.hamburger {
-		content:'';
-			display: block;
-			width: 25px;
-			height: 3x;
-			margin: 5px;
-			background: var(--text);
+	.hamburger{
+		display: block;
 	}
+}
+
+
+
+
+section {
+	width: 100%;
+	height: 50vh;
+	background: #1a0d5f;
+}
+
+footer{
+  bottom: 0;
+  width: 100%;
+  height: 4rem;
+  background: var(--secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
