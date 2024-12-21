@@ -39,22 +39,36 @@ body {
 	z-index: 4;
 	transition: background-color linear;
 }
-.logoM{
+/* .logoM{
 	font-size: 2.5rem;
   font-weight: 700;
   color: var(--primary);
+} */
+
+.name-container{
+	transition:all .3s linear;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	width: 120px;
+	flex-direction: row;
 }
 .name {
-	font-size: 1.5rem;
+	font-size: 1.4rem;
 	font-weight: 600;
 	background: linear-gradient(to top right, rgb(0, 0, 0),rgb(50, 50, 88), rgb(255, 255, 255));
 	background-clip: text;
 	-webkit-background-clip: text;
 	color: transparent;
+	margin-right: 10px;
+
+	
+	
 }
+
 .name-container:hover {
-	transform:matrix(60deg);
-	transition:all 1s linear;
+	transform: scale(1.1);
+	
 }
 
 .routes {
@@ -182,19 +196,21 @@ body {
 
 @keyframes fade-out {
 	0% {
-		filter: blur(0);
 		opacity: 1;
 	}
 
 	8% {
-		filter: blur(0);
 		opacity: 1;
+		filter: blur(0);
 		transform: scale(1.6) translateY(-60px);
-
 	}
+	18%{
+		filter: blur(10px);
+		visibility: hidden;
+	}
+	
 	100% {
-		opacity: 0;
-		filter: blur(1000px);
+		visibility: hidden;
 	}
 }
 
