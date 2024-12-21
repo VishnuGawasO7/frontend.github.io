@@ -117,3 +117,25 @@ body {
 	flex-direction: column;
 	font-size: 5rem;
 }
+
+@media (max-width: 786px) {
+	.routes {
+		display: none;
+	}
+
+	.hamburger {
+		display: block;
+	}
+
+	.hero p {
+		font-size: 16px;
+	}
+
+	.hero h1 {
+		font-size: 32px;
+	}
+
+	.navbar {
+		justify-content: space-between;
+	}
+}
