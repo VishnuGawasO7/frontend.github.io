@@ -189,9 +189,9 @@ body {
 	8% {
 		filter: blur(0);
 		opacity: 1;
-		transform: scale(1.5);
-	}
+		transform: scale(1.6) translateY(-60px);
 
+	}
 	100% {
 		opacity: 0;
 		filter: blur(1000px);
