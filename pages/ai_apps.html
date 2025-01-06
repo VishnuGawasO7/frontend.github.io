@@ -12,7 +12,7 @@
         content="Exploring the World of Artificial Intelligence and its applications. Learn about AI concepts, applications, and the latest trends.">
     <title>AI App Website</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-    <link rel="stylesheet" type="text/css" href="about.css">
+    <link rel="stylesheet" type="text/css" href="ai_apps.css">
 </head>
 
 <body>
@@ -89,12 +89,11 @@
       header h1 {
           font-size: 2.5rem;
           color: var(--primary);
-          margin-top: 60px;
       }
 
       .container {
           max-width: 1200px;
-          margin: 20px auto;
+          margin: 40px auto;
           padding: 20px;
       }
 
@@ -108,29 +107,40 @@
           margin-bottom: 10px;
       }
 
-      section p {
-          color: var(--secondary-text);
-          line-height: 1.6;
-      }
-
-      .values {
+      .tool-list {
           display: flex;
           flex-wrap: wrap;
           gap: 20px;
       }
 
-      .value-item {
+      .tool-item {
           flex: 1;
-          min-width: 250px;
+          min-width: 300px;
           background: var(--secondary);
           border-radius: 8px;
           padding: 15px;
           box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
       }
 
-      .value-item h3 {
+      .tool-item h3 {
           color: var(--accent);
           margin-bottom: 10px;
+      }
+
+      .tool-item p {
+          color: var(--secondary-text);
+          line-height: 1.6;
+          margin-bottom: 10px;
+      }
+
+      .tool-item a {
+          color: var(--accent);
+          text-decoration: none;
+          font-weight: bold;
+      }
+
+      .tool-item a:hover {
+          text-decoration: underline;
       }
 
       footer {
@@ -138,6 +148,7 @@
           color: var(--text);
           text-align: center;
           padding: 20px;
+          margin-top: 40px;
       }
 
       footer a {
@@ -152,59 +163,51 @@
 </head>
 <body>
   <header>
-      <h1>About Us</h1>
+      <h1>AI Tools</h1>
   </header>
 
   <div class="container">
       <section>
-          <h2>Our Mission</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      </section>
+          <h2>AI Tools for Different Needs</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Explore the various categories of AI tools available today:</p>
 
-      <section>
-          <h2>Who We Are</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin accumsan urna eu tincidunt vehicula. Nulla facilisi.</p>
-      </section>
+          <div class="tool-list">
+              <div class="tool-item">
+                  <h3>Content Creation</h3>
+                  <p>AI tools like Jasper and Copy.ai help create engaging written content efficiently.</p>
+                  <a href="https://www.jasper.ai" target="_blank">Visit Jasper</a>
+              </div>
 
-      <section>
-          <h2>Our Values</h2>
-          <div class="values">
-              <div class="value-item">
-                  <h3>Innovation</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id urna sit amet lorem dictum dictum.</p>
+              <div class="tool-item">
+                  <h3>Image Generation</h3>
+                  <p>Tools like DALL·E and Artbreeder generate images from textual descriptions or modify existing ones.</p>
+                  <a href="https://openai.com/dall-e" target="_blank">Learn More</a>
               </div>
-              <div class="value-item">
-                  <h3>Customer Focus</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac eros nec nisi efficitur cursus.</p>
+
+              <div class="tool-item">
+                  <h3>Code Assistance</h3>
+                  <p>GitHub Copilot and Tabnine assist developers by suggesting lines or blocks of code.</p>
+                  <a href="https://github.com/features/copilot" target="_blank">Try GitHub Copilot</a>
               </div>
-              <div class="value-item">
-                  <h3>Integrity</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean mollis erat ut malesuada consectetur.</p>
+
+              <div class="tool-item">
+                  <h3>Data Analysis</h3>
+                  <p>Tools like RapidMiner and Tableau use AI to analyze and visualize data efficiently.</p>
+                  <a href="https://www.tableau.com" target="_blank">Explore Tableau</a>
+              </div>
+
+              <div class="tool-item">
+                  <h3>Chatbots</h3>
+                  <p>AI chatbots like ChatGPT and Dialogflow improve customer interactions and automate support.</p>
+                  <a href="https://openai.com/chatgpt" target="_blank">Discover ChatGPT</a>
+              </div>
+
+              <div class="tool-item">
+                  <h3>Translation</h3>
+                  <p>DeepL and Google Translate provide quick and accurate translations for various languages.</p>
+                  <a href="https://www.deepl.com" target="_blank">Visit DeepL</a>
               </div>
           </div>
-      </section>
-
-      <section>
-          <h2>Leadership Team</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel purus tincidunt, fermentum est sed, porttitor nunc:</p>
-          <ul>
-              <li><strong>John Doe</strong>, CEO: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-              <li><strong>Jane Smith</strong>, CTO: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-          </ul>
-      </section>
-
-      <section>
-          <h2>Our Journey</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor fermentum ex at lacinia:</p>
-          <ul>
-              <li><strong>2020</strong>: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-              <li><strong>2022</strong>: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-          </ul>
-      </section>
-
-      <section>
-          <h2>Join Us</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a href="#">Sed do eiusmod tempor incididunt ut labore.</a></p>
       </section>
   </div>
 
@@ -273,4 +276,3 @@
 
     <p class="copyright"><span class="f-logo">AI HUB</span>Copyright 2024</p>
 </footer>
-    

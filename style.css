@@ -517,10 +517,6 @@ footer {
 }
 
 @media(max-width: 820px) {
-	body {
-		background-color: #C03B3D;
-	}
-
 	.up-section,
 	.down-section {
 		flex-direction: column;
