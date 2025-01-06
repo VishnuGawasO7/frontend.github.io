@@ -327,8 +327,11 @@ p {
 	flex-direction: column;
 	overflow: hidden;
 	height: auto;
+	transition: all 0.2s ease;
 }
-
+.card:hover{
+	scale: 1.1;
+}
 .card_image {
 	flex: 0.5;
 }
